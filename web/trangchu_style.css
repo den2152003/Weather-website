@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: url('images/beautiful-backgrounds.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.hder {
+  position: absolute;
+  top: 0; 
+  height: 7.5%;
+  width: 100%;  
+  background-color: rgba(28, 9, 39, 0.2);
+  display: flex;  
+}
+.hder p {
+  cursor: pointer;
+  padding: 0.8% 3%;
+  color: white;
+}
+.hder p:hover {
+  border-radius: 30px;
+  border-color: rgb(66, 168, 188);
+  border-width: 1%;
+  border-style: solid;
+  color: rgb(239, 236, 39);
+  padding: 0.7% 3%;
+  
+}
+
+.iconWeb {
+  position: absolute;
+  top: 9%;
+  right: -6%;
+  color: white;
+}
+.iconWeb img {
+  height: auto;
+  width: 30%;
+  border-radius: 50%;
+  margin-left: 13%;
+}
+
+
+.anhvui {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  height: auto;
+  width: 49%;
+  opacity: 0.7;
+}
+
+.tieude {
+  position: absolute;
+  top:25%;
+  right: 12%;
+  width: 35%;
+  color: white;
+  text-align:center;
+}
+
+.p1 {
+  position: absolute;
+  top:19%;
+  right: 24%;
+  color: rgb(240, 128, 225);
+  font-size: 120%;
+  font-style: italic;
+  font-weight: bolder;
+}
+.muctieu {
+  position: absolute;
+  top:45%;
+  right: 5%;
+  width: 42%;
+  color: rgb(255, 255, 255);
+  font-size: 120%;
+  text-align: justify;  
+}
+
+.tuychon {
+  position: absolute;
+  top:70%;
+  right: 4%;
+  width: 40%;
+  color: rgb(255, 255, 255);
+  font-size: 120%;
+}
+
+.tuychon a {
+  text-decoration: none;
+  margin-right: 10%;  
+  margin-left: 5%;  
+  border-radius: 30px;
+  border-color: rgb(66, 168, 188);
+  border-width: 3px;
+  border-style: solid;
+  padding: 1% 4%;
+  font-weight: bold;
+}
+
+.tuychon a:hover {
+  background-color: rgb(133, 45, 148);
+  color: white;
+}
+
+#logout {
+  position: absolute;
+  top:1%;
+  right: 1%;
+  width: auto;
+  height: 85%;
+  cursor: pointer;
+}
+.dangxuat p {
+  position: absolute;
+  top:19%;
+  right: 30%;
+  cursor: pointer;
+  padding: 0.8% 3%;
+  color: white;
+}
+.dangxuat{
+  position: absolute;
+  top:0%;
+  right: 2%;
+  height: 7.5%;
+  width: 11%;  
+  cursor: pointer;
+}
+.dangxuat:hover {
+  border-radius: 30px;
+  border-color: rgb(66, 168, 188);
+  border-width: 3px;
+  border-style: solid;  
+  background-color: rgba(124, 53, 237, 0.482);
+}

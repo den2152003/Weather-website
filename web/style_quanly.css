@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: url('images/purple-pink-background-ym583jugfgj4ibkt.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.hder {
+  position: absolute;
+  top: 0; 
+  height: 7.5%;
+  width: 100%;  
+  background-color: rgba(28, 9, 39, 0.2);
+  display: flex;  
+}
+.hder p {
+  cursor: pointer;
+  padding: 0.8% 3%;
+  color: white;
+}
+.hder p:hover {
+  border-radius: 30px;
+  border-color: rgb(66, 168, 188);
+  border-width: 1%;
+  border-style: solid;
+  color: rgb(239, 236, 39);
+  padding: 0.7% 3%;
+  
+}
+
+.iconWeb {
+  position: absolute;
+  top: 9%;
+  right: -6%;
+  color: white;
+}
+.iconWeb img {
+  height: auto;
+  width: 30%;
+  border-radius: 50%;
+  margin-left: 13%;
+}
+
+#back {
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    width: 3%;
+    height: auto;
+    cursor:pointer;
+}
+#back:hover {
+    width: 3.8%;
+    height: auto;
+}
+
+#logout {
+    position: absolute;
+    top:1%;
+    right: 1%;
+    width: auto;
+    height: 85%;
+    cursor: pointer;
+}
+.dangxuat p {
+    position: absolute;
+    top:19%;
+    right: 30%;
+    cursor: pointer;
+    padding: 0.8% 3%;
+    color: white;
+}
+.dangxuat{
+    position: absolute;
+    top:0%;
+    right: 2%;
+    height: 7.5%;
+    width: 11%;  
+    cursor: pointer;
+}
+.dangxuat:hover {
+    border-radius: 30px;
+    border-color: rgb(66, 168, 188);
+    border-width: 3px;
+    border-style: solid;  
+    background-color: rgba(124, 53, 237, 0.482);
+}
+
+.khoi1 {
+    position: absolute;
+    top:10%;
+    left: 2%;
+    height: 25%;
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thongso {
+    height: 100%;
+    width: 20%;
+    background-color: rgba(64, 187, 187, 0.735);
+    margin-left: 1%;
+    margin-right: 6%;
+    border-radius: 30px;
+}
+
+.bieudo1 {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+}
+
+.anhvui {
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+  height: auto;
+  width: 20%;
+}
+
+.dieukhien {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  height: 48%;
+  width: 20%; 
+  border-radius: 30px;  
+  flex-direction: row;
+}
+
+.toprow {
+  position: absolute;   
+  top: 0%;
+  height: 18%;
+  width: 100%;
+  background-color: rgba(185, 119, 246, 0.735);
+  border-top-left-radius: 30px;  
+  border-top-right-radius: 30px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600; font-size: 130%; color: rgb(255, 255, 255);
+}
+
+.bottomrow {
+  position: absolute;   
+  bottom: 0%;
+  height: 77%;
+  width: 100%;
+  background-color: rgba(215, 94, 152, 0.735);
+  border-bottom-left-radius: 30px;  
+  border-bottom-right-radius: 30px;  
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  /* box-shadow: 0 0 10px #21ecf3, 0 0 40px #21ecf3, 0 0 80px #21ecf3; */
+  box-shadow: none;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  box-shadow: none;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Khi input được chọn */
+input:checked + .slider {
+  background-color: #26f9f9;
+  box-shadow: 0 0 10px #21ecf3, 0 0 40px #21ecf3, 0 0 80px #21ecf3;
+}
+
+/* Khi input được chọn và có focus */
+input:focus + .slider {
+  box-shadow: 0 0 0 #21ecf3, 0 0 40px #21ecf3, 0 0 80px #21ecf3;
+}
+
+/* Khi input không được chọn */
+input:not(:checked) + .slider {
+  box-shadow: none; /* Loại bỏ box shadow khi toggle được tắt */
+}
+
+/* Khi input được chọn */
+input:checked + .slider:before {
+  transform: translateX(26px);
+  box-shadow: 0 0 0 #21ecf3, 0 0 40px #21ecf3, 0 0 80px #21ecf3;
+} 
+
+/* Optional: Style for status text */
+#statusText1, #statusText2, #statusText3, #p-statusText1, #p-statusText2, #p-statusText3 {
+  padding-left: 28%;
+  margin-top: 7%;
+  color: white;
+}

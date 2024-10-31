@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoAn1</title>
+    <link rel="stylesheet" href="trangchu_style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class=" animate__animated animate__fadeIn">  
+    <div class="hder">
+    </div>
+    <div class="dangxuat" onclick="confirmLogout()">
+        <p>Đăng xuất</p>
+        <img src="images/logout.webp" alt="Đăng xuất" id="logout">
+    </div>
+    <div class="iconWeb">
+        <img src="images/iconthoitiet.png" alt="iconWeb">
+        <p>Weather At Home</p>
+    </div>
+    <img class="anhvui" src="images/elearning-portals-cover-picture.svg" alt="Ảnhvui">
+    <div class="tieude">
+        <h1>Giám sát thời tiết tại nhà và quản lý thiết bị</h1>
+    </div>
+    <p class="p1">Đề tài đồ án 1</p>
+    <div class="muctieu">
+        <p>Mục tiêu: Giám sát thời tiết tại nhà, tìm kiếm được thời tiết tại các địa điểm khác có sẵn trên OpenWeatherMap và điều khiển được các thiết bị điện</p>
+    </div>
+    <div class="tuychon">
+        <a href="index.html">Tìm kiếm</a>
+        <a href="quanly.html">Quản lý</a>
+    </div>
+    
+    
+<script>
+    function confirmLogout() {
+    // Hiển thị hộp thoại xác nhận
+        var confirmLogout = confirm("Bạn có chắc chắn muốn đăng xuất?");
+
+        // Nếu người dùng đồng ý
+        if (confirmLogout) {
+            // Chuyển hướng đến trang trangchu.html
+            window.location.href = "trangchu.html";
+        }
+    }
+</script>
+</body>
+</html>

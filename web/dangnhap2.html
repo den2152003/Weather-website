@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body, html {
+            background-image: url(images/dangnhap.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            height: 100%;
+            width: 100%;
+            display: flex; 
+            align-items: center;
+            overflow: hidden;
+            
+
+        }
+        #loginForm {
+            display: flex; 
+            align-items: center;
+            flex-direction: column;
+            justify-items: center;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            height: 80%;
+            width: 35%;
+            margin-left:32%;
+            opacity:0.9 ;
+           
+        }
+        #errorMessage {
+            justify-content: center;
+            align-items: center;
+        }
+        #username, #password {
+            height: 12%;
+            width: 85%;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            border-color: black;
+            border-style:solid;
+        }
+        #username {
+            background-image: url(./images/icon-username.png);
+            background-size: 15% auto;
+            background-position: right;
+        }
+        #password {
+            background-image: url(./images/Security-Password-2-icon.png);
+            background-size: 9% auto;
+            background-position: right 3% center;
+            margin-top:5%;
+        }
+        #loginButton {
+            height: 12%;
+            width: 35%;
+            font-size:120%;
+            font-weight: bold;
+            background-color:   rgb(103, 57, 141); /* Màu nền của nút button */
+            color: white; /* Màu chữ của nút button */
+            padding: 3% 10%; /* Kích thước padding của nút button */
+            border: none; /* Không có viền */
+            border-radius: 5px; /* Bo tròn góc của nút button */
+            cursor: pointer; /* Con trỏ hiển thị khi di chuột qua nút button */
+            margin-top:3%;
+        }
+        #loginButton:hover {
+            background-color:   rgb(57, 18, 89);     /* Màu nền thay đổi khi di chuột qua */
+        }
+        
+        #errorMessage {
+            color: red; 
+            display: none;
+            font-size: 100%;
+        }
+        .iconWeb {
+        position: absolute;
+        top: 4%;
+        right: -5%;
+        color: white;
+        }
+        .iconWeb img {
+        height: auto;
+        width: 30%;
+        border-radius: 50%;
+        margin-left: 13%;
+        }
+        #back {
+            position: absolute;
+            bottom: 3%;
+            left: 2%;
+            width: 3%;
+            height: auto;
+            cursor:pointer;
+        }
+        #back:hover {
+            width: 3.8%;
+            height: auto;
+        }
+
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class=" animate__animated animate__bounceIn">  
+    <img id="back" src="images/back.png" alt="Back img" onclick="window.location.href='trangchu.html';">
+    <div class="iconWeb">
+        <img src="images/iconthoitiet.png" alt="iconWeb">
+        <p>Weather At Home</p>
+    </div>
+    <form id="loginForm">
+        <div style="background-color: rgb(59, 33, 81); width: 100%;">
+            <h2 style="display: flex; justify-content: center; align-items: center; color: white;">Login Form</h2>
+        </div>
+        <!-- Sử dụng thuộc tính placeholder để hiển thị "Email or Username" -->
+        <input style="font-size: 100%; padding-left:5%; margin-top: 15%;" type="text" id="username" name="username" required placeholder="Enter Email or Username"><br><br>
+        <input style="font-size: 100%; padding-left:5%;" type="password" id="password" name="password" required placeholder="Enter Password"><br><br>
+        <input type="submit" value="Login" id="loginButton">
+        <p id="errorMessage">Invalid username or password. Please try again.</p>
+    </form>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+        document.getElementById("errorMessage").style.display = "none";
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Check if username and password are correct
+        if ((username === "doan1" && password === "tandatvantu")) {
+            // Redirect to new index page
+            window.location.href = "index.html";
+        } else {
+            // Display error message
+            document.getElementById("errorMessage").style.display = "block";
+        }
+    });
+</script>
+</body>
+</html>
